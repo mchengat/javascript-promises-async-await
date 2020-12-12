@@ -34,7 +34,7 @@ async function getBooksAndMoviesAsync() {
         return [books, movies]
     }
     catch (error){
-        console.log("Error fetching books and movies", error)
+        console.error("Error fetching books and movies", error)
     }
 }
 
@@ -44,7 +44,7 @@ async function getBooksOrMoviesAsync() {
         return values
     }
     catch (error){
-        console.log("Error waiting for the promise race", error)
+        console.error("Error waiting for the promise race", error)
     }
 }
 
